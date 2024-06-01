@@ -1,29 +1,31 @@
+/* Общие стили для страницы */
 body, html {
     margin: 0;
     padding: 0;
     height: 100%;
     font-family: monospace;
-    background-color: #222; /* Цвет фона тёмной темы */
-    color: #fff; /* Цвет текста */
+    background-color: #121212; /* Очень тёмный фон */
+    color: #e0e0e0; /* Светлый текст */
 }
 
+/* Стили для шапки */
 .header {
-    background-color: #333;
+    background-color: #1e1e1e; /* Тёмный фон шапки */
     padding: 10px 20px;
     width: 100%;
     display: flex;
     justify-content: flex-start; /* Выравнивание по левому краю */
     gap: 20px; /* Разделение кнопок */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     position: fixed;
     top: 0;
     z-index: 1000;
 }
 
 .header-button {
-    color: #fff;
+    color: #e0e0e0;
     text-decoration: none;
-    background-color: #444;
+    background-color: #333; /* Тёмный фон кнопок */
     padding: 10px 20px;
     border-radius: 5px;
     transition: background-color 0.3s;
@@ -33,18 +35,19 @@ body, html {
     background-color: #555;
 }
 
+/* Стили для контейнера */
 .container {
-    display: flex;
-    flex-direction: column; /* Изменено */
-    align-items: center;
+    margin-top: 80px; /* Отступ для шапки */
+    padding: 20px;
     width: calc(100% - 40px);
     margin: 80px auto 20px auto; /* Добавлен отступ сверху */
-    background: #333; /* Цвет фона контейнера */
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: #1e1e1e; /* Цвет фона контейнера */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     box-sizing: border-box;
+    border-radius: 10px;
 }
 
+/* Стили для текста */
 .text-content {
     width: 100%; /* Изменено */
     padding: 20px;
@@ -102,11 +105,11 @@ body, html {
 }
 
 .card {
-    background: #333;
+    background: #1e1e1e; /* Тёмный фон карточек */
     padding: 20px;
     margin: 10px;
     width: calc(100% - 40px); /* Изменено */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease-in-out;
     border-radius: 10px;
     box-sizing: border-box;
