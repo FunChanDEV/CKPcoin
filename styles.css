@@ -1,0 +1,127 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: monospace;
+    background-color: #222; /* Цвет фона тёмной темы */
+    color: #fff; /* Цвет текста */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: calc(100% - 40px);
+    margin: 20px;
+    background: #333; /* Цвет фона контейнера */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+.text-content {
+    width: 50%;
+    padding: 20px;
+}
+
+.image-content {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-content img {
+    max-width: 100%;
+    border-radius: 10px;
+    transform: scale(0);
+    transition: transform 1s ease-in-out;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.text-content h1 {
+    font-size: 2.5em;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.text-content p {
+    font-size: 1.2em;
+    animation: fadeInUp 1s ease-in-out;
+    animation-delay: 0.5s;
+}
+
+.highlight {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    margin: 0 20px 20px 20px;
+}
+
+.card {
+    background: #333;
+    padding: 20px;
+    margin: 10px;
+    width: calc(33% - 40px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    border-radius: 10px;
+    box-sizing: border-box;
+    display: flex; /* Добавлено */
+    flex-direction: column; /* Добавлено */
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card h2 {
+    font-size: 1.5em;
+    margin-top: 0;
+    width: 100%; /* Добавлено */
+}
+
+.card p {
+    font-size: 1em;
+    margin-bottom: 0;
+    width: 100%; /* Добавлено */
+}
+
+.card img {
+    margin-top: 25px;
+    width: 100%; /* Изменено */
+    border-radius: 8px; /* Перемещено */
+}
+
+.card h2,
+.card p {
+    width: 100%;
+    text-align: center;
+}
+
+.timer {
+    font-size: 1.5em;
+    margin-top: 0;
+    width: 100%; /* Добавлено */
+
+}
+
+*{
+
+    font-size: 1.05em;
+}
