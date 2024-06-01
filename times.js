@@ -1,5 +1,5 @@
 // Установите дату, до которой будет идти обратный отсчет
-const countdownDate = new Date("June 30, 2024 00:00:00").getTime();
+const countdownDate = new Date("June 20, 2024 15:00:00").getTime();
         
 const countdownFunction = setInterval(function() {
     const now = new Date().getTime();
