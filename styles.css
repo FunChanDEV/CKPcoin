@@ -6,7 +6,6 @@ body, html {
     background-color: #222; /* Цвет фона тёмной темы */
     color: #fff; /* Цвет текста */
 }
-
 .header {
     background-color: #333;
     padding: 10px 20px;
@@ -27,11 +26,21 @@ body, html {
     padding: 10px 20px;
     border-radius: 5px;
     transition: background-color 0.3s;
+    display: inline-flex;
+    align-items: center;
+    white-space: nowrap; /* Запрещает перенос строк внутри кнопки */
+}
+
+.header-button img {
+    margin-left: 8px; /* Отступ между текстом и картинкой */
+    width: auto;
+    height: 20px; /* Фиксированная высота для изображения */
 }
 
 .header-button:hover {
-    background-color: #555;
+    background-color: #555; /* Пример изменения фона при наведении */
 }
+
 
 .container {
     display: flex;
