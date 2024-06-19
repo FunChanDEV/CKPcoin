@@ -1,3 +1,4 @@
+
 body, html {
     margin: 0;
     padding: 0;
@@ -6,6 +7,8 @@ body, html {
     background-color: #222; /* Цвет фона тёмной темы */
     color: #fff; /* Цвет текста */
 }
+
+
 .header {
     background-color: #333;
     padding: 10px 20px;
@@ -184,4 +187,98 @@ body, html {
     margin-top: 1.05em;
     margin-left: auto;
     margin-right: auto;
+}
+
+.employee-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Полный экран */
+    position: relative;
+    background-color: #222;
+}
+
+.employee-card {
+    background: #333;
+    color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.employee-card.active {
+    opacity: 1;
+}
+
+.employee-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.arrow-button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+}
+
+.arrow-button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.left-arrow {
+    left: 10px;
+}
+
+.right-arrow {
+    right: 10px;
+}
+
+
+.employee-skills {
+    margin-top: 10px;
+    padding-left: 20px; /* Отступ слева для всего списка */
+    list-style-type: none; /* Убираем стандартные маркеры у списка */
+}
+
+
+.employee-skills {
+    margin-top: 10px;
+    padding-left: 0; /* Убираем отступ слева для всего списка */
+    list-style-type: none; /* Убираем стандартные маркеры у списка */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Центрируем элементы по горизонтали */
+}
+
+.employee-skills li {
+    display: flex; /* Используем flex-контейнер для выравнивания */
+    align-items: center; /* Выравниваем элементы по центру по вертикали */
+    margin-bottom: 5px; /* Отступ между элементами списка */
+    text-align: center; /* Выравниваем текст по центру */
+}
+
+.employee-skills li::before {
+    content: "\2022"; /* Юникод символ для маркера точки */
+    margin-right: 10px; /* Отступ между маркером и текстом */
 }
